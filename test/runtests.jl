@@ -83,14 +83,14 @@ end
   p = Species("proton")
 
   #Test g_spin function
-  g_spin(e) ≈ 2
-  g_spin(C) ≈ 2
+  @test g_spin(e) ≈ 2
+  @test g_spin(C) ≈ 2
 
   #Test gyromagnetic_anomaly function
-  gyromagnetic_anomaly(e) ≈ 2
-  gyromagnetic_anomaly(C) ≈ 2
+  @test gyromagnetic_anomaly(e) ≈ 2
+  @test gyromagnetic_anomaly(C) ≈ 2
 
-  g_nucleon(p) ≈ 5.58
+  @test g_nucleon(p) ≈ 5.58
 end
 
 @testset "Helper Functions" begin
